@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+body{
+    font-family: 'Titillium Web', sans-serif;
+}
+/***** navbar start *****/
+.navbar{
+    margin: 15px 0px;
+}
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+    margin: 0px 7px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #000;
+}
+/***** navbar end *****/
+/***** slider part start *****/
+.slider{
+    
+}
+.carousel-caption{
+    width: 767px;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-60%);
+    letter-spacing: 2px;
+}
+.carousel-caption h1{
+    font-size: 40px;
+    font-weight: 600;
+}
+.carousel-caption h3{
+    margin-bottom: 50px;
+}
+.btn-custom1{
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 13px 30px;
+    border-radius: 0;
+    color: #f0f0f0;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.btn-custom1:hover{
+    background: #f0f0f0;
+}
+/***** slider part end *****/
+/***** heading part start *****/
+.heading{
+    margin-bottom: 60px;
+}
+.heading span{
+    position: relative;
+    font-style: italic;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 5px;
+}
+.heading span:before{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    background: #DB2B2B;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+}
+.heading span:after{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    background: #DB2B2B;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+}
+/***** heading part end *****/
+/***** product part start *****/
+#product-wrapper{
+    background: #FFFFFF;
+    padding: 50px 0;
+}
+#product-wrapper:hover .heading span:before,
+#product-wrapper:hover .heading span:after,
+#trending-wrapper:hover .heading span:before,
+#trending-wrapper:hover .heading span:after,
+#blog-wrapper:hover .heading span:before,
+#blog-wrapper:hover .heading span:after{
+    width: 100%;
+}
+.product{
+    position: relative;
+}
+.product:before{
+    content: "";
+    position: absolute;
+    background: rgba(0,0,0,.5);
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    transition: all .5s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+}
+.product:hover:before{
+    transform: scale(1);
+}
+.product a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 16px;
+    font-style: italic;
+    font-weight: bold;
+    color:#f0f0f0;
+    text-transform: capitalize;
+    z-index: 1;
+    opacity: 0;
+    transition: all 1.5s ease;
+    -webkit-transition: all 1.5s ease;
+    -moz-transition: all 1.5s ease;
+}
+.product:hover a{
+    opacity: 1;
+}
+.product .hvr-overlay-one:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid #f5f5f5;
+    transform: scale(0,0.8);
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+}
+.product:hover .hvr-overlay-one:before{
+    transform: scale(0.8,0.8);
+}
+.product .hvr-overlay-one:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid #f5f5f5;
+    transform: scale(0,0.8);
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+}
+.product:hover .hvr-overlay-one:after{
+    transform: scale(0.8,0.8);
+}
+.product .hvr-overlay-two:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-left: 1px solid #f5f5f5;
+    transform: scale(0.8,0);
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+}
+.product:hover .hvr-overlay-two:before{
+    transform: scale(0.8,0.8);
+}
+.product .hvr-overlay-two:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-right: 1px solid #f5f5f5;
+    transform: scale(0.8,0);
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+}
+.product:hover .hvr-overlay-two:after{
+    transform: scale(0.8,0.8);
+}
+.offer{
+    margin-top: 30px;
+    position: relative;
+}
+.offer:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    background: rgba(0,0,0,.5);
+    opacity: 0;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+}
+.offer:hover:before{
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+}
+.offer h2{
+    position: absolute;
+    color: #fff;
+    font-weight: 600;
+    padding: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 35px;
+}
+.offer:hover h2{
+    animation: myframe 1s ease-in-out 0s 1;
+}
+@keyframes myframe {
+    from {
+        left: 100%;
+        top: 20%;
+        transform: translate(-20%,-100%);
+    }
+    to {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+}
+/***** product part end *****/
+/***** trending part start *****/
+#trending-wrapper{
+    background: url('../images/trend-bg.png');
+    padding: 60px 0;
+}
+
+.trend-text h3,.blog h3{
+    color: #DC0000;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+.trend-text h5,.blog h5{
+    position: relative;
+    padding-bottom: 15px;
+    font-size: 15px;
+}
+.trend-text h5:after{
+    content: "";
+    position: absolute; 
+    width: 7%;
+    bottom: 0;
+    left: 0;
+    border-bottom: 2px solid #9E9E9E;
+}
+.trend-text article{
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.trend-text p,.blog p{
+    margin-bottom: 40px;
+    color: #7A7A7A;
+}
+.trend-text ul li a{
+    padding: 7px 20px;
+    background: transparent;
+    border: 1px solid;
+    text-align: center;
+    margin-right: 5px;
+    text-decoration: none;
+    color:#000;
+    transition: 1s all ease;
+    -webkit-transition:1s all ease;
+    -moz-transition:1s all ease;
+    font-weight: 700;
+}
+.trend-text ul li a:hover,
+.trend-text .btn-custom2:hover,
+.blog .btn-custom2:hover,
+.subscribe .btn-custom1:hover{
+    background: #000;
+    border: 1px solid #000;
+    color:#fff;
+}
+.btn-custom2{
+    padding: 10px 30px;
+    border: 1px solid #000;
+    border-radius: 0;
+    margin: 15px 15px 0 0;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+    transition: 1s all ease;
+    -webkit-transition:1s all ease;
+    -moz-transition:1s all ease;
+}
+/***** trending part end *****/
+/***** blog part start *****/
+#blog-wrapper{
+    padding: 60px 0;
+}
+.swiper-slide{
+    padding: 20px 50px;
+}
+/***** blog part end *****/
+/***** subscribe-wrapper part start *****/
+#subscribe-wrapper{
+    background: url(../images/subscribe.png);
+    padding: 50px 0;
+    position: relative;
+}
+#subscribe-wrapper:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: rgba(0,0,0,.5);
+}
+.form-group label{
+    color: white;
+    letter-spacing: 1px;
+    padding: 11px 0px;
+}
+.form-control,.input-group-addon{
+    background: transparent;
+}
+.input-group-addon{
+    border-right: 0;
+}
+.form-control{
+    border-left: 0;
+}
+.input-group-lg > .form-control,
+.input-group-lg > .input-group-addon,.form-control{
+    border-radius: 0;
+    color: #f5f5f5;
+}
+.subscribe{
+    width: 100%;
+    height: 130px;
+    position: relative;
+}
+.subscribe .btn-custom1{
+    position: absolute;
+    background: #fff;
+    color: #000;
+    padding: 11px 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+}
+/***** subscribe-wrapper part end *****/
+#footer-wrapper{
+    padding: 30px;
+}
